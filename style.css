@@ -58,8 +58,11 @@ a.hover{
 
 header {
     position: relative;
-    border-bottom: 2px solid red;
-    width:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a0200;
 }
 
 header .container{
@@ -100,12 +103,13 @@ img{
 }
 
 nav {
-    opacity: 0;
-    display: none;
-    position:absolute;
-    width: 100%;
-    background-color: black;
-    text-align: center;
+    display: block;
+    opacity: 1;
+    position: relative;
+    width: auto;
+    background-color: #1a0200;
+    text-align: right;
+    margin-left: auto;
 }
 
 header button {
@@ -118,20 +122,25 @@ header button {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0; 
-  border: 1px solid black;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: row;
 }
 
 nav ul li {
-    border: 1px solid white;
+    border: none;
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
-    display: block;
-    padding: 10px;
+    display: inline-block;
+    padding: 20px;
     color: white;
+    text-align: center;
 }
+
 
 nav ul li a:hover{
     background-color: #444;
@@ -173,12 +182,16 @@ nav ul li a:active{
         display: block;
         opacity: 1;
         position: relative;
-        text-align: left;
+        text-align: right;
+        width: auto;
+        margin-left: auto;
+        background-color: #1a0200;
     }
 
     nav ul li {
-            border: none;
-        }
+        border: none;
+        display: inline-block;
+    }
 
     section{ 
         display: inline-block;
@@ -198,11 +211,6 @@ nav ul li a:active{
         opacity: 1;
         display: block;
     }
-
-    nav ul li {
-            display: inline-block;
-        }
-     
     
     
 }
