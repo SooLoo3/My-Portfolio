@@ -329,6 +329,19 @@ p{
     p{
         font-size: 12px;
     }
+    #contactForm {
+        margin: 16px auto;    
+        width: calc(100% - 40px);
+        max-width: 420px;
+        align-items: stretch;
+    }
+    #contactForm input,
+    #contactForm textarea,
+    #contactForm button {
+        width: 50%;
+        box-sizing: border-box;
+        
+    }
 
 }
 
