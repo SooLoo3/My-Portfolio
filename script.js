@@ -1,9 +1,10 @@
 function toggleMenu(evt) {
-    console.log('evt', evt);
+    //Toggle navigation menu visibility
     const nav = document.querySelector("#nav-list");
-    console.log('nav', nav);
+    
     if (!nav) return; 
     nav.classList.toggle('open');
+
     if (nav.style.display === "block") {
         evt.target.innerText = "=";
         nav.style.display = "none";
@@ -17,7 +18,7 @@ function toggleMenu(evt) {
     }
 }
 
-document.getElementById("contactForm").addEventListener("submit", function() {
+document.addEventListener("DOMContentLoaded", function() {
     
     var contactForm = document.getElementById("contactForm");
     if (contactForm) {
@@ -57,7 +58,7 @@ document.getElementById("contactForm").addEventListener("submit", function() {
                 `Phone: ${phone} \r\n` +
                 `Message:${message}`
             );
-            const recipient = 'milton.cruz@batestech.edu';
+            const recipient = 'rammontes3@gmail.com';
             const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
 
             //error handling for mailto
@@ -71,7 +72,7 @@ document.getElementById("contactForm").addEventListener("submit", function() {
             }
 
             //reset form
-            document.getElementById("contactForm").reset();
+            contactForm.reset();
 
         });
     }

@@ -238,41 +238,25 @@ p{
     font-size: 50px;
 }
 
-.fiance{
-    margin: clamp(40px, 6vw, 80px);
+#contactForm{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-left: 150px;
+    font-size:large;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contact{
+    text-align: center;
+    color: white;
+    margin-top: clamp(40px, 6vw, 80px);
+    font-size: 80px;
+}
 
 /*Tablet*/
 @media screen and (min-width: 310px) and (max-width: 1020px) {
